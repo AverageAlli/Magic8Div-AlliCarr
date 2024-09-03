@@ -8,11 +8,10 @@ const fortunes = [
 ];
 
 function pickFortune() {
-    // Corrected function names and syntax
     const randomPick = Math.floor(Math.random() * fortunes.length);
     const yourFortune = fortunes[randomPick];
 
     const showFortune = document.getElementById('yourFortune');
-    showFortune.innerHTML = yourFortune.text; // Corrected casing
+    showFortune.innerHTML = yourFortune.text; 
     showFortune.style.color = yourFortune.color;
 }
